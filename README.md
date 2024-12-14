@@ -12,7 +12,7 @@ This is the complete source code and the build instructions for the official alt
 <summary>Other sources</summary>
 
 * [**Mamba X** on Huawei AppGallery](https://appgallery.huawei.com/app/C101754199)
-* [**GitHub Releases**](https://github.com/TGX-Android/Telegram-X/releases)
+* [**GitHub Releases**](https://github.com/FantasticSukhi/MambaX/releases)
 
 </details>
 
@@ -45,7 +45,7 @@ This is the complete source code and the build instructions for the official alt
 
 ### Building
 
-1. `$ git clone --recursive --depth=1 --shallow-submodules https://github.com/TGX-Android/Telegram-X tgx` — clone **Mamba X** with submodules
+1. `$ git clone --recursive --depth=1 --shallow-submodules https://github.com/FantasticSukhi/MambaX tgx` — clone **Mamba X** with submodules
 2. In case you forgot the `--recursive` flag, `cd` into `tgx` directory and: `$ git submodule init && git submodule update --init --recursive --depth=1`
 3. Create `keystore.properties` file outside of source tree with the following properties:<br/>`keystore.file`: absolute path to the keystore file<br/>`keystore.password`: password for the keystore<br/>`key.alias`: key alias that will be used to sign the app<br/>`key.password`: key password.<br/>**Warning**: keep this file safe and make sure nobody, except you, has access to it. For production builds one could use a separate user with home folder encryption to avoid harm from physical theft
 4. `$ cd tgx`
@@ -63,9 +63,9 @@ This is the complete source code and the build instructions for the official alt
 
 ### Quick setup for development
 
-If you are developing a [contribution](https://github.com/TGX-Android/Telegram-X/blob/main/docs/PULL_REQUEST_TEMPLATE.md) to the project, you may follow the simpler building steps:
+If you are developing a [contribution](https://github.com/FantasticSukhi/MambaX/blob/main/docs/PULL_REQUEST_TEMPLATE.md) to the project, you may follow the simpler building steps:
 
-1. `$ git clone --recursive https://github.com/TGX-Android/Telegram-X tgx`
+1. `$ git clone --recursive https://github.com/FantasticSukhi/MambaX tgx`
 2. `$ cd tgx`
 3. [Obtain Telegram API credentials](https://core.telegram.org/api/obtaining_api_id)
 4. Create `local.properties` file in the root project folder using any text editor:<br/><pre># Location where you have Android SDK installed
@@ -80,7 +80,7 @@ After submitting a pull request and its initial review, special build including 
 
 ## Reproducing public builds
 
-In order to verify that there is no additional source code injected inside official APKs, you must use **Ubuntu 21.04** for builds published before [26th May 2023](https://github.com/TGX-Android/Telegram-X/commit/e9a054a0f469a98a13f7e0d751539687fef8759b) or **Ubuntu 22.04.2 LTS** for any newer releases, and comply with the following requirements:
+In order to verify that there is no additional source code injected inside official APKs, you must use **Ubuntu 21.04** for builds published before [26th May 2023](https://github.com/FantasticSukhi/MambaX/commit/e9a054a0f469a98a13f7e0d751539687fef8759b) or **Ubuntu 22.04.2 LTS** for any newer releases, and comply with the following requirements:
 
 1. Create user called `vk` with the home directory located at `/home/vk`
 2. Clone `tgx` repository to `/home/vk/tgx`
